@@ -17,6 +17,7 @@
    	.btn_fr { margin: 0 auto; }
 </style>
 <body>
+<%@ include file="../header.jsp" %>
 <div class="content container" id="content">
 	<h2 class="title">회원 약관 동의</h2>
 	<form name="frm1" id="frm1" action="../insertCustom.jsp" method="post">
