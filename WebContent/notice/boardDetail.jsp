@@ -49,8 +49,10 @@
 	</table>
 	<div class="btn-group">
 		<a href="GetBoardListCtrl" class="btn btn-primary">목록으로</a>
+		<% if (sid.equals("admin")){ %>
 		<a href="UpdateBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-primary">글 수정</a>
 		<a href="DeleteBoardCtrl?notiNo=<%=vo.getNotiNo() %>" class="btn btn-danger">글 삭제</a>
+		<%} %>
 	</div>
 </div>
 <%@ include file="../footer.jsp" %>

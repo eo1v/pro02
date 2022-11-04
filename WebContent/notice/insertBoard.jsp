@@ -41,7 +41,6 @@
 		</table>
 		<div class="btn-group">
 			<input type="submit" name="submit-btn" class="btn btn-primary" value="글 등록">
-			<input type="reset" name="reset-btn" class="btn btn-danger" value="취소">
 			<a href="../GetBoardListCtrl" class="btn btn-primary">목록으로</a>
 		</div>
 	</form>	

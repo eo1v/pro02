@@ -20,6 +20,7 @@
 <%
 	List<Notice> notiList = (ArrayList<Notice>) request.getAttribute("notiList");	//생성, fowarding된 데이터 받아옴
 %>
+
 <div class="content container" id="content">
 	<h2 class="title">공지사항 목록</h2>
 	<table class="table">
@@ -40,9 +41,11 @@
 		<% } %>	
 		</tbody>
 	</table>
+	<% if (sid.equals("admin")){ %>
 	<div class="btn-group">
 		<a href="./notice/insertBoard.jsp" class="btn btn-primary">글 등록</a>
 	</div>
+	<%}%>
 </div>
 <%@ include file="../footer.jsp" %>
 </body>
