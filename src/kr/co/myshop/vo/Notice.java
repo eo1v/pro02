@@ -6,6 +6,8 @@ public class Notice {
 	private String content;	//내용
 	private String author;	//작성자
 	private String resdate;	//작성일
+	private int visited; 	// 방문횟수 
+	
 	public int getNotiNo() {
 		return notiNo;
 	}
@@ -36,5 +38,11 @@ public class Notice {
 	public void setResdate(String resdate) {
 		this.resdate = resdate;
 	}
-
+	public int getVisited() {
+		return visited;
+	}
+	public void setVisited(int visited) {
+		this.visited = visited;
+	}
+	
 }

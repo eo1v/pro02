@@ -3,7 +3,7 @@ package kr.co.myshop.vo;
 public class Sales {
 	private int saleNo;		//상품번호 
 	private String cusId; 	//구매자
-	private String proNo;	//구매 상품
+	private int proNo;	//구매 상품번호 
 	private int amount;		//구매 수량
 	private String saleDate;//구매일
 	private int parselNo; 	//배송번호
@@ -20,10 +20,10 @@ public class Sales {
 	public void setCusId(String cusId) {
 		this.cusId = cusId;
 	}
-	public String getProNo() {
+	public int getProNo() {
 		return proNo;
 	}
-	public void setProNo(String proNo) {
+	public void setProNo(int proNo) {
 		this.proNo = proNo;
 	}
 	public int getAmount() {

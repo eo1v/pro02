@@ -31,6 +31,8 @@ public class GetBoardDetailCtrl extends HttpServlet {
 			Class.forName(DRIVER);
 			sql = "select * from notice where notino=?";
 			Connection con = DriverManager.getConnection(URL, USER, PASS);
+			
+			con.setAutoCommit(false);
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, notiNo);
 			ResultSet rs = pstmt.executeQuery();
@@ -38,6 +40,13 @@ public class GetBoardDetailCtrl extends HttpServlet {
 			//결과를 데이터베이스로 부터 받아서 VO에 저장
 			Notice vo = new Notice();
 			if(rs.next()){
+				
+				sql="update notice set visited=visited+1 where notino=?";
+				pstmt=con.prepareStatement(sql);
+				pstmt.setInt(1,notiNo);
+				pstmt.executeUpdate();
+				con.commit() ;
+				con.setAutoCommit(true);
 				vo.setNotiNo(rs.getInt("notino"));
 				vo.setTitle(rs.getString("title"));
 				vo.setContent(rs.getString("content"));

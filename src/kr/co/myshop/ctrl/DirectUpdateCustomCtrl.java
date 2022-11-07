@@ -1,4 +1,4 @@
-package kr.co.myshop.view;
+package kr.co.myshop.ctrl;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class GetProductList
+ * Servlet implementation class DirectUpdateCustomCtrl
  */
-@WebServlet("/GetProductList")
-public class GetProductList extends HttpServlet {
+@WebServlet("/DirectUpdateCustomCtrl")
+public class DirectUpdateCustomCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public GetProductList() {
+    public DirectUpdateCustomCtrl() {
         super();
         // TODO Auto-generated constructor stub
     }
