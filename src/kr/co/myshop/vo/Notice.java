@@ -1,13 +1,12 @@
 package kr.co.myshop.vo;
 //공지사항 클래스
 public class Notice {
-	private int notiNo;		//공지번호
-	private String title;	//제목
-	private String content;	//내용
-	private String author;	//작성자
-	private String resdate;	//작성일
-	private int visited; 	// 방문횟수 
-	
+	private int notiNo;
+	private String title;
+	private String content;
+	private String author;
+	private String resDate;
+	private int visited; 
 	public int getNotiNo() {
 		return notiNo;
 	}
@@ -32,11 +31,11 @@ public class Notice {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public String getResdate() {
-		return resdate;
+	public String getResDate() {
+		return resDate;
 	}
-	public void setResdate(String resdate) {
-		this.resdate = resdate;
+	public void setResDate(String resDate) {
+		this.resDate = resDate;
 	}
 	public int getVisited() {
 		return visited;
@@ -44,5 +43,4 @@ public class Notice {
 	public void setVisited(int visited) {
 		this.visited = visited;
 	}
-	
 }

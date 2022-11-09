@@ -1,10 +1,9 @@
 package kr.co.myshop.vo;
 //장바구니 클래스
 public class Cart {
-	private int cartNo; //장바구니번호 
-	private String cusId; //구매자
-	private int proNo; //
-	private int amount; // 구매수량 
+	private int cartNo;
+	private String cusId;
+	private int proNo;
 	public int getCartNo() {
 		return cartNo;
 	}
@@ -23,11 +22,4 @@ public class Cart {
 	public void setProNo(int proNo) {
 		this.proNo = proNo;
 	}
-	public int getAmount() {
-		return amount;
-	}
-	public void setAmount(int amount) {
-		this.amount = amount;
-	}
-	
-}	
+}

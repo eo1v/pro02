@@ -41,7 +41,7 @@
 				<td><%=cusList.size()-i %></td>
 				<td><a href="<%=request.getContextPath() %>/GetCustomDetailCtrl?cusId=<%=vo.getCusId() %>"><%=vo.getCusId() %></a></td>
 				<td><%=vo.getCusName() %></td>
-				<td><%=vo.getResdate() %></td>
+				<td><%=vo.getRegDate() %></td>
 				<td><%
 				if(vo.getLevel()==0) {
 					out.println("<span>준회원</span>");

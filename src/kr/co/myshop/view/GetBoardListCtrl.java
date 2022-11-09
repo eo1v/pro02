@@ -43,7 +43,7 @@ public class GetBoardListCtrl extends HttpServlet {
 				vo.setTitle(rs.getString("title"));	
 				vo.setContent(rs.getString("content"));
 				vo.setAuthor(rs.getString("author"));
-				vo.setResdate(rs.getString("resdate"));
+				vo.setResDate(rs.getString("resdate"));
 				notiList.add(vo);	//
 			}
 			request.setAttribute("notiList", notiList); // 추가

@@ -1,14 +1,14 @@
 package kr.co.myshop.vo;
-
+//고객 클래스
 public class Custom {
-	private String cusId; 	//아이디
-	private String cusPw;	//비밀번호
-	private String cusName;	//이름
-	private String address;	//주소
-	private String tel;		//연락처
-	private String resdate;	//가입일
-	private int point;		//포인트
-	private int level;		//가입레벨
+	private String cusId;	//고객아이디
+	private String cusPw;	//고객비밀번호
+	private String cusName;	//고객명
+	private String address;	//고객주소
+	private String tel;		//고객연락처
+	private String regDate;	//가입일
+	private int point;		//구매포인트
+	private int level;		//고객등급
 	private int visited;	//방문횟수
 	public String getCusId() {
 		return cusId;
@@ -40,11 +40,11 @@ public class Custom {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	public String getResdate() {
-		return resdate;
+	public String getRegDate() {
+		return regDate;
 	}
-	public void setResdate(String resdate) {
-		this.resdate = resdate;
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
 	}
 	public int getPoint() {
 		return point;
@@ -64,5 +64,4 @@ public class Custom {
 	public void setVisited(int visited) {
 		this.visited = visited;
 	}
-	
 }

@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import kr.co.myshop.vo.Notice;
 import kr.co.myshop.vo.Product;
+import kr.co.myshop.vo.*;
 
 @WebServlet("/GetProductListCtrl")
 public class GetProductListCtrl extends HttpServlet {

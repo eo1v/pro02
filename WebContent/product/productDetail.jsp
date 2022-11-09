@@ -6,11 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>공지사항 목록</title>
+<title>상품 디테일</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="./css/common.css">
 
 <style>
 .title { padding-top:36px; padding-bottom:20px; }
@@ -22,7 +22,7 @@
 	Product vo = (Product) request.getAttribute("pro");
 %>
 <div class="content container" id="content">
-	<h2 class="title">공지사항 목록</h2>
+	<h2 class="title">상품 디테일</h2>
 	<table class="table">
 		<tbody>
 			<tr>
@@ -52,14 +52,21 @@
 					세일전 가격 : (<del><%=vo.getOriPrice() %></del>) 
 				</td>
 			</tr>
-			
+			<% if(sid.equals("admin")){ %>
+				<tr>
+					<th>재고</th>
+					<td><%=vo.getAmount() %></td>
+				</tr>				
+			<%} %>
 		</tbody>
 	</table>
 	<div class="btn-group">
-		<a href="<%=request.getContextPath() %>/GetProductListCtrl" class="btn btn-danger">목록으로</a>
+		<a href="<%=request.getContextPath() %>/GetProductListCtrl" class="btn btn-primary">목록으로</a>
+		<a href="" class="btn btn-primary">장바구니</a>
 		<% if(sid.equals("admin")) { %>
 		<a href="<%=request.getContextPath() %>/DeleteProductCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-primary">제품 삭제</a>
-		<a href="<%=request.getContextPath() %>/UpdateProductCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-danger">제품 정보 수정</a>
+		<a href="<%=request.getContextPath() %>/UpdateProductCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-primary">제품 정보 수정</a>
+		<a href="<%=request.getContextPath() %>/ProductWearingCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-danger">입고</a>
 		<% } %>
 	</div>
 </div>

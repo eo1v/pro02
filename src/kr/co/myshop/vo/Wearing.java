@@ -1,14 +1,13 @@
 package kr.co.myshop.vo;
 
 public class Wearing {
-	private int prono;
-	private int amount;
-	
-	public int getProno() {
-		return prono;
+	private int proNo;	//상품 번호
+	private int amount;	//상품 수량
+	public int getProNo() {
+		return proNo;
 	}
-	public void setProno(int prono) {
-		this.prono = prono;
+	public void setProNo(int proNo) {
+		this.proNo = proNo;
 	}
 	public int getAmount() {
 		return amount;
@@ -16,5 +15,4 @@ public class Wearing {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	
 }

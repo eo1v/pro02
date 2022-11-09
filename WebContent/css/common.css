@@ -13,3 +13,11 @@ left:50%; margin-left:-111px; display:block; padding-left:20px; padding-right:20
 .ft_ico_lst li { float:left; width:25%; }
 .ft_ico_lst li a { display:block; padding:6px; }
 .ft_ico_lst li img { display:block; width:100%; height:auto; }
+
+* { margin: 0; padding: 0; }
+body, html { width:100%; }
+ul { list-style:none; }
+li { list-style:none; }
+a { text-decoration: none; }
+button, input { outline:0; background-color: #333; color:#fff; }
+.wrap { width: 100%; clear:both; }

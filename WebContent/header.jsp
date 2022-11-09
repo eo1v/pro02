@@ -60,6 +60,7 @@
 		  </li>
 		  <%} %>
 		 <% }else{ %>
+		 <span class="nav-link">게스트</span>
 		 <li class="nav-item">
 		    <a class="nav-link active" href="./custom/login.jsp">LOGIN</a>
 		  </li>

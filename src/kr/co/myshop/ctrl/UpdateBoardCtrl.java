@@ -50,7 +50,7 @@ public class UpdateBoardCtrl extends HttpServlet {
 				vo.setTitle(rs.getString("title"));
 				vo.setContent(rs.getString("content"));
 				vo.setAuthor(rs.getString("author"));
-				vo.setResdate(rs.getString("resdate"));
+				vo.setResDate(rs.getString("resdate"));
 			}
 			request.setAttribute("notice", vo);
 			

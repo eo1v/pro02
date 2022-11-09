@@ -1,13 +1,15 @@
 package kr.co.myshop.vo;
 
 public class Sales {
-	private int saleNo;		//상품번호 
-	private String cusId; 	//구매자
-	private int proNo;	//구매 상품번호 
-	private int amount;		//구매 수량
-	private String saleDate;//구매일
-	private int parselNo; 	//배송번호
-	private int salePayNo; 	//카드번호
+	private int saleNo;	//(auto)판매번호
+	private String cusId;	//+고객아이디
+	private String proNo;	//+제품번호
+	private int amount;	//+판매수량
+	private String saleDate;//(default)판매일
+	private int parselNo;	//(*parsel)배송코드
+	private int salePayNo;	//(*payment)결제번호
+	private int parselState;
+	private String parselCompany;
 	public int getSaleNo() {
 		return saleNo;
 	}
@@ -20,10 +22,10 @@ public class Sales {
 	public void setCusId(String cusId) {
 		this.cusId = cusId;
 	}
-	public int getProNo() {
+	public String getProNo() {
 		return proNo;
 	}
-	public void setProNo(int proNo) {
+	public void setProNo(String proNo) {
 		this.proNo = proNo;
 	}
 	public int getAmount() {
@@ -50,5 +52,16 @@ public class Sales {
 	public void setSalePayNo(int salePayNo) {
 		this.salePayNo = salePayNo;
 	}
-	
+	public int getParselState() {
+		return parselState;
+	}
+	public void setParselState(int parselState) {
+		this.parselState = parselState;
+	}
+	public String getParselCompany() {
+		return parselCompany;
+	}
+	public void setParselCompany(String parselCompany) {
+		this.parselCompany = parselCompany;
+	}
 }

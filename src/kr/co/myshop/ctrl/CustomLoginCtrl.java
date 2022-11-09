@@ -24,6 +24,7 @@ public class CustomLoginCtrl extends HttpServlet {
 	private final static String USER = "root";
 	private final static String PASS = "a1234";
 	String sql = "";
+	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
@@ -31,6 +32,7 @@ public class CustomLoginCtrl extends HttpServlet {
 		String cusId = request.getParameter("cusId");
 		String cus = request.getParameter("cusPw");
 		String cusPw = "";
+	
 		try {
 			cusPw = SHA256.encrypt(cus);
 		} catch (NoSuchAlgorithmException e) {

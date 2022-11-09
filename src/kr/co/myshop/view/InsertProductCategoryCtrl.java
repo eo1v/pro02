@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import kr.co.myshop.vo.Category;
-import kr.co.myshop.vo.Notice;
 
 @WebServlet("/InsertProductCategoryCtrl")
 public class InsertProductCategoryCtrl extends HttpServlet {

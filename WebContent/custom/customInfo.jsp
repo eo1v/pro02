@@ -93,6 +93,7 @@
 		<div class="btn-group">
 			<input type="submit" name="submit-btn" class="btn btn-info" value="정보수정">
 			<input type="reset" name="reset-btn" class="btn btn-info" value="취소">
+			<input type="button" name="delete-btn"  class="btn btn btn-danger" value="회원탈퇴">
 		</div>
 	</form>	
 	<script>

@@ -41,7 +41,7 @@ public class InsertBoardProCtrl extends HttpServlet {
 			pstmt.setString(2, content);
 			pstmt.setString(3, author);
 			cnt = pstmt.executeUpdate();
-			//결과를 데이터베이스로 부터 받아서 VO에 저장
+			
 			if(cnt>=1){
 				response.sendRedirect("GetBoardListCtrl");
 			} else {

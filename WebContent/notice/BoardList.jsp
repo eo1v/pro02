@@ -36,7 +36,7 @@
 		<tr>
 			<td><%=notiList.size()-i %></td>
 			<td><a href="GetBoardDetailCtrl?notiNo=<%=vo.getNotiNo() %>"><%=vo.getTitle() %></a></td>
-			<td><%=vo.getResdate() %></td>
+			<td><%=vo.getResDate() %></td>
 		</tr>
 		<% } %>	
 		</tbody>
@@ -45,7 +45,8 @@
 	<div class="btn-group">
 		<a href="./notice/insertBoard.jsp" class="btn btn-primary">글 등록</a>
 	</div>
-	<%}%>
+	<% }else{ %>
+			<%} %>
 </div>
 <%@ include file="../footer.jsp" %>
 </body>

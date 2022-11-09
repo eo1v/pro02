@@ -44,7 +44,7 @@ public class GetCustomListCtrl extends HttpServlet {
 				vo.setCusName(rs.getString("cusname"));
 				vo.setAddress(rs.getString("address"));
 				vo.setTel(rs.getString("tel"));
-				vo.setResdate(rs.getString("resdate"));
+				vo.setRegDate(rs.getString("regdate"));
 				vo.setPoint(rs.getInt("point"));
 				vo.setLevel(rs.getInt("level"));
 				vo.setVisited(rs.getInt("visited"));

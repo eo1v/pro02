@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.crypto.util.SHA256;
 
+//회원정보 수정 완료
 @WebServlet("/UpdateCustomCtrl")
 public class UpdateCustomCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;

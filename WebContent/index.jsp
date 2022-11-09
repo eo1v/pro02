@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
+
 <%@ include file="header.jsp" %>
 <div class="card bg-dark text-white">
   <img src="./baskin/mainbanner.gif" class="card-img" alt="베스킨">
@@ -21,7 +22,7 @@
   <div class="card-header">
   </div>
   <div class="card-body">
-    <h5 class="card-title">*************</h5>
+    <h5 class="card-title">New</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="" class="btn btn-primary">Go somewhere</a>
   </div>
@@ -49,7 +50,6 @@
     </div>
   </div>
 </div>
-
 <%@ include file="footer.jsp" %>
 </body>
 </html>
